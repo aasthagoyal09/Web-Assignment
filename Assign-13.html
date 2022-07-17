@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118, 164, 250);
+}
+.con{
+    width:600px;
+    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px ;
+    font-size: 16px;
+}
+.contact{
+    padding: 20px;
+}
+#name,#email,#message{
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding: 5px;
+    border: none;
+    border: 2px solid;
+    border-color: lightgrey;
+    outline: none;
+    font-size: large;
+}
+.butns{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.butn{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(101, 101, 244);
+    border: none;
+    color: white;
+}
+.butn:active{
+    background-color: red;
+}
+#message{
+    height: 100px;
+}
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <div class="con">
+            <h1 align="center" class=".contact">Contact Us</h1>
+            <input type="text" id="name" placeholder="Name"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+            <div class="butns">
+                <button class="butn">SEND</button>
+            </div>
+        </div>
+        </section>
+        <script src="./Assign13.js"></script>
+</body>
+</html>
